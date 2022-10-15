@@ -73,3 +73,17 @@ heap.c:36:7: error: unused variable ‘size’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d02d5b8
+Sat 15 Oct 2022 06:16:46 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:37:7: error: unused variable ‘dadSize’ [-Werror=unused-variable]
+   37 |   int dadSize = (pq->size - 1)/2;
+      |       ^~~~~~~
+heap.c:36:7: error: unused variable ‘size’ [-Werror=unused-variable]
+   36 |   int size = pq->size;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0fbe2f1
