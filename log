@@ -158,3 +158,13 @@ heap.c:93:13: error: ‘index2’ undeclared (first use in this function); did y
       |             index
 Compilation failed
 6494c25
+Sat 15 Oct 2022 06:59:25 PM UTC: 
+ heap.c | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:58:42: error: expected ‘,’ or ‘;’ before ‘:’ token
+   58 |   void *data = pq->heapArray[size-1].data:
+      |                                          ^
+Compilation failed
+6f4ac58
