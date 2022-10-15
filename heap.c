@@ -47,6 +47,7 @@ void heap_push(Heap* pq, void* data, int priority){
     size = dadSize;
     dadSize = (size -1)/2;
   }
+  pq->size++;
 }
 
 
