@@ -84,8 +84,8 @@ void heap_pop(Heap* pq){
         i = indice; 
         
       }else break;
-    }
-    else if (pq->heapArray[indice2].priority > pq->heapArray[indice].priority){
+    }else if (pq->heapArray[indice2].priority > pq->heapArray[indice].priority){
+      
       if (pq->heapArray[indice2].priority > pq->heapArray[i].priority){
         pq->heapArray[i].priority = pq->heapArray[indice2].priority;
         pq->heapArray[i].data = pq->heapArray[indice].data;
