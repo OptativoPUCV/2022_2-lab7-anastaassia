@@ -53,3 +53,23 @@ heap.c:36:7: error: unused variable ‘size’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ef31416
+Sat 15 Oct 2022 06:16:35 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:31:54: error: implicit declaration of function ‘sizepf’ [-Werror=implicit-function-declaration]
+   31 |     pq->heapArray = realloc(pq->heapArray, pq->capac*sizepf(heapElem));
+      |                                                      ^~~~~~
+heap.c:31:61: error: expected expression before ‘heapElem’
+   31 |     pq->heapArray = realloc(pq->heapArray, pq->capac*sizepf(heapElem));
+      |                                                             ^~~~~~~~
+heap.c:37:7: error: unused variable ‘dadSize’ [-Werror=unused-variable]
+   37 |   int dadSize = (pq->size - 1)/2;
+      |       ^~~~~~~
+heap.c:36:7: error: unused variable ‘size’ [-Werror=unused-variable]
+   36 |   int size = pq->size;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d02d5b8
