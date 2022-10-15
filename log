@@ -168,3 +168,9 @@ heap.c:58:42: error: expected ‘,’ or ‘;’ before ‘:’ token
       |                                          ^
 Compilation failed
 6f4ac58
+Sat 15 Oct 2022 06:59:41 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|0
+total_score: 70/70
+6c10543

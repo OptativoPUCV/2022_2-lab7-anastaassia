@@ -55,7 +55,7 @@ void heap_pop(Heap* pq){
   int size = pq->size;
   int pt = pq->heapArray[size-1].priority;
 
-  void *data = pq->heapArray[size-1].data:
+  void *data = pq->heapArray[size-1].data;
   pq->heapArray[size].priority = pq->heapArray[0].priority;
   pq->heapArray[size].data = pq->heapArray[0].data;
   pq->heapArray[0].priority = pt;
