@@ -35,7 +35,10 @@ void heap_push(Heap* pq, void* data, int priority){
 
   int size = pq->size;
   int dadSize = (pq->size - 1)/2;
-  
+
+  heapElem *aux = (heapElem *)malloc(sizeof(heapElem));
+
+  while
 
 }
 

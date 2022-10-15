@@ -87,3 +87,24 @@ heap.c:36:7: error: unused variable ‘size’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0fbe2f1
+Sat 15 Oct 2022 06:19:34 PM UTC: 
+ heap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:43:1: error: expected ‘(’ before ‘}’ token
+   43 | }
+      | ^
+      | (
+heap.c:39:13: error: unused variable ‘aux’ [-Werror=unused-variable]
+   39 |   heapElem *aux = (heapElem *)malloc(sizeof(heapElem));
+      |             ^~~
+heap.c:37:7: error: unused variable ‘dadSize’ [-Werror=unused-variable]
+   37 |   int dadSize = (pq->size - 1)/2;
+      |       ^~~~~~~
+heap.c:36:7: error: unused variable ‘size’ [-Werror=unused-variable]
+   36 |   int size = pq->size;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4914143
