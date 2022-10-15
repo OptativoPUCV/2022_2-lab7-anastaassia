@@ -108,3 +108,9 @@ heap.c:36:7: error: unused variable ‘size’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 4914143
+Sat 15 Oct 2022 06:28:31 PM UTC: 
+ heap.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+ tests:  2|2
+total_score: 20/70
+eea2f94
